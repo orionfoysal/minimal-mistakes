@@ -16,11 +16,11 @@ description              : "Empty vessel Sounds Much"
 url                      : #orinfoysal.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : #orionfoysal/orionfoysal.github.io # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : /assets/images/Dumb_Runner_Forrest_Gump # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : /assets/images/Dumb_Runner_Forrest_Gump.png # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
+  provider               : "facebook" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -29,7 +29,7 @@ comments:
     # https://developers.facebook.com/docs/plugins/comments
     appid                :
     num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
+    colorscheme          : "dark" # "light" (default), "dark"
 staticman:
   allowedFields          : # ['name', 'email', 'url', 'message']
   branch                 : # "master"
@@ -63,16 +63,17 @@ naver-site-verification  :
 twitter:
   username               :
 facebook:
-  username               :
+  username               : shariful.foysal
   app_id                 :
   publisher              :
-og_image                 : # Open Graph/Twitter default site image
+og_image                 : /assets/images/og_images.jpg # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
+    - "https://facebook.com/shariful.foysal"
 
 # Analytics
 analytics:
@@ -87,15 +88,15 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am an amazing person."
   location         : "NoWhere"
-  email            :
+  email            :  "orionfoysal@gmail.com"
   uri              :
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
-  facebook         :
+  facebook         : "shariful.foysal"
   foursquare       :
-  github           :
+  github           : "orionfoysal"
   gitlab           :
   google_plus      :
   keybase          :
@@ -111,7 +112,7 @@ author:
   vine             :
   weibo            :
   xing             :
-  youtube          : # "https://youtube.com/c/MichaelRoseDesign"
+  youtube          : "https://www.youtube.com/channel/UCNXyg_WyRtC_OreoPnEjX8Q?view_as=subscriber" # "https://youtube.com/c/MichaelRoseDesign"
 
 
 # Reading Files
