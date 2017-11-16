@@ -10,3 +10,10 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+  - title: "Google"
+    url: /search/
+  # - title: "About"
+  #   url: /search/
+  
+  - title: "About"
+    url: /about/
