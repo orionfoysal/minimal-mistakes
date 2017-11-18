@@ -1,0 +1,26 @@
+# Authors
+
+Nicola Tesla:
+  name        : "Mr. Tesla"
+  uri         : "http://thewhip.com"
+  email       : "billy@rick.com"
+  bio         : "What do you want, jewels? I am a very extravagant man."
+  avatar      : "bio-photo-2.jpg"
+  twitter     : "extravagantman"
+  google_plus : "BillyRick"
+
+Albert Einstien:
+  name        : "Albert Einstein"
+  email       : "cornelius@thewhip.com"
+  bio         : "I ordered what?"
+  avatar      : "bio-photo.jpg"
+  twitter     : "rhymeswithsackit"
+  google_plus : "CorneliusFiddlebone"
+
+Shariful Islam Fosyal:
+  name        : "Shariful Islam Foysal"
+  email       : "orionfoysal@gmail.com"
+  bio         : "Confused Idiot?"
+  avatar      : /assests/images/foysal.jpg
+  twitter     : #"rhymeswithsackit"
+  google_plus : #"CorneliusFiddlebone"

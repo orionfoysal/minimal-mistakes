@@ -11,10 +11,12 @@ main:
   # - title: "Sitemap"
   #   url: /sitemap/
   - title: Tutorials
-    url: /tutorials/
+    url: /categories/
   - title: Projects
-    url: /projects/
-  - title: "Search"
+    url: /collection-archive/
+  - title: Search
     url: /search/
   - title: "About"
     url: /about/
+  - title: "Grid"
+    url: /portfolio/
