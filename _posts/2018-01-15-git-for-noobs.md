@@ -13,6 +13,8 @@ Clone | add | commit | push Remote Repositories
 - Coply the link of the repository from the `Clone or download` dropdown .
 - Go to the directory where the repository to be placed and open `terminal` if in linux or `git bash` if in windows ( [git bash for windows](http://gitforwindows.org/) needs to be already installed).
 - Then use `git clone` command to clone the repository. 
+
+
 ```sh  
 $ git clone url
 ```
