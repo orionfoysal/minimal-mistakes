@@ -1,0 +1,100 @@
+---
+title: "Installing tesseract 4.0 on Ubuntu 16.04"
+layout: single
+header:
+  teaser: /assets/images/teaser.png
+  image: /assets/images/thumbnail.png
+
+author: Shariful Islam Foysal
+---
+
+You can download Tesseract from Ubuntu Package Manager simply with: 
+```sh
+$ apt-get install tesseract-ocr 
+```
+But unfortunately Ubuntu package manager does't contain the Tesseract 4.0 version. It will downlaod Tesseract 3.x (and Leptonica 1.7.0 . So if you want the latest version of Tesseract, you have to download it from git repository and compile it manually. 
+
+Here I'll go through the steps I followed to install Tesseract 4.0 on my Ubuntu 16.04 LTS system.
+
+##### NOTE
+Ubuntu 14.04 LTS or prior versions doesn't support tesseract 4.0 LSTM. You can install tesseract 3.x on it.
+
+
+### Step 1: Install required dependecies 
+if not already installed you need the following libraries.
+```sh
+$ sudo apt-get install g++ # or clang++ (presumably)
+$ sudo apt-get install autoconf automake libtool
+$ sudo apt-get install autoconf-archive
+$ sudo apt-get install pkg-config
+$ sudo apt-get install libpng-dev
+$ sudo apt-get install libjpeg8-dev
+$ sudo apt-get install libtiff5-dev
+$ sudo apt-get install zlib1g-dev
+```
+
+If you want to use training tools too :
+```sh
+$ sudo apt-get install libicu-dev
+$ sudo apt-get install libpango1.0-dev
+$ sudo apt-get install libcairo2-dev
+```
+
+### Step 2: Install Lepronica 1.74.x
+### Install from source:
+- Ubuntu 16.04 repository contains Leptonica 1.71. So you need to [Download](http://www.leptonica.org/download.html) the latest from [Leptonica](http://www.leptonica.org/). 
+- Go to the Download directory and install it.
+```sh
+$ sudo tar xf leptonica-1.74.tar.gz &&\
+cd leptonica-1.74 &&\
+sudo ./configure &&\
+sudo make &&\
+sudo make install
+```
+#### Or
+### Insltall from Unofficial Ubuntu PPA
+Easier way of installing Leptonica is to install it from Unofficial Ubuntu PPA by Alex.
+```sh
+$ sudo add-apt-repository ppa:alex-p/tesseract-ocr &&\
+sudo apt-get update &&\
+sudo apt-get install -y libleptonica-dev &&\
+sudo ldconfig
+```
+
+### Step 3: Install Tesseract
+* Download or clone Tesseract 4.0 from [github repository](https://github.com/tesseract-ocr/tesseract/)
+* Compile and install
+```sh
+$ sudo sh autogen.sh  &&\
+./configure  &&\
+LDFLAGS="-L/usr/local/lib" CFLAGS="-I/usr/local/include" make  &&\
+sudo make install  &&\
+sudo make install -langs  &&\
+sudo ldconfig
+```
+
+### Step 5: Verify Installation 
+* Check if correct version of Tesseract and Leptonica is installed.
+```sh
+$ tesseract --version
+```
+It should show something like this
+* Check the installed languages 
+```sh
+$ tesseract --list-langs
+```
+
+### Step 6: Downloading language files
+Initially you'll find no language data is available. You need to download data files of the laguages you need from [tessdata files](https://github.com/tesseract-ocr/tesseract/wiki/Data-Files). You'll find three types of file availabe. [tessdata_fast](https://github.com/tesseract-ocr/tessdata_fast), [tessdata_best](https://github.com/tesseract-ocr/tessdata_best), [tessdata](https://github.com/tesseract-ocr/tessdata). You can download any of them according to your need. ( You'll find more about them in [tesseract github wiki](https://github.com/tesseract-ocr/tesseract/wiki) )
+* Move your downloaded language files to the tessdata directory. Default is `/usr/local/share/tessdata`. Now you can see the available languages using `$tesseract --list-langs` command from terminal.
+
+Using tesseract
+---
+To extract bangla text data from an image file named `input.png` you can use the following command:
+```sh
+$ tesseract input.png output -l ben
+```
+You can find more options and uses in `$tesseract --help` or `$man tesseract` 
+
+
+**All the Best !**
