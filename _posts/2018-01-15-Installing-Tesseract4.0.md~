@@ -1,10 +1,6 @@
 ---
 title: "Installing tesseract 4.0 on Ubuntu 16.04"
 layout: single
-header:
-  teaser: /assets/images/teaser.png
-  image: /assets/images/thumbnail.png
-
 author: Shariful Islam Foysal
 ---
 
@@ -41,6 +37,7 @@ $ sudo apt-get install libcairo2-dev
 ```
 
 ### Step 2: Install Lepronica 1.74.x
+###
 ### Install from source:
 - Ubuntu 16.04 repository contains Leptonica 1.71. So you need to [Download](http://www.leptonica.org/download.html) the latest version from [Leptonica](http://www.leptonica.org/). 
 - Go to the Download directory and install it.
