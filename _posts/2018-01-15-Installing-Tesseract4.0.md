@@ -1,10 +1,6 @@
 ---
 title: "Installing tesseract 4.0 on Ubuntu 16.04"
 layout: single
-header:
-  teaser: /assets/images/teaser.png
-  image: /assets/images/thumbnail.png
-
 author: Shariful Islam Foysal
 ---
 
@@ -12,18 +8,18 @@ You can download Tesseract from Ubuntu Package Manager simply with:
 ```sh
 $ apt-get install tesseract-ocr 
 ```
-But unfortunately Ubuntu package manager does't contain the Tesseract 4.0 version. It will downlaod Tesseract 3.x (and Leptonica 1.7.0 . So if you want the latest version of Tesseract, you have to download it from git repository and compile it manually. 
+But unfortunately Ubuntu package manager doesn't contain the Tesseract 4.0 version. It will download Tesseract 3.x (and Leptonica 1.7.0). So if you want the latest version of Tesseract, you have to download it from git repository and compile it manually. 
 
 Here I'll go through the steps I followed to install Tesseract 4.0 on my Ubuntu 16.04 LTS system.
 
-##### NOTE
+#### NOTE
 Ubuntu 14.04 LTS or prior versions doesn't support tesseract 4.0 LSTM. You can install tesseract 3.x on it.
 
 
 ### Step 1: Install required dependecies 
 if not already installed you need the following libraries.
 ```sh
-$ sudo apt-get install g++ # or clang++ (presumably)
+$ sudo apt-get install g++ 
 $ sudo apt-get install autoconf automake libtool
 $ sudo apt-get install autoconf-archive
 $ sudo apt-get install pkg-config
@@ -42,7 +38,7 @@ $ sudo apt-get install libcairo2-dev
 
 ### Step 2: Install Lepronica 1.74.x
 ### Install from source:
-- Ubuntu 16.04 repository contains Leptonica 1.71. So you need to [Download](http://www.leptonica.org/download.html) the latest from [Leptonica](http://www.leptonica.org/). 
+- Ubuntu 16.04 repository contains Leptonica 1.71. So you need to [Download](http://www.leptonica.org/download.html) the latest version from [Leptonica](http://www.leptonica.org/). 
 - Go to the Download directory and install it.
 ```sh
 $ sudo tar xf leptonica-1.74.tar.gz &&\
@@ -51,7 +47,7 @@ sudo ./configure &&\
 sudo make &&\
 sudo make install
 ```
-#### Or
+### Or
 ### Insltall from Unofficial Ubuntu PPA
 Easier way of installing Leptonica is to install it from Unofficial Ubuntu PPA by Alex.
 ```sh
@@ -84,17 +80,17 @@ It should show something like this
 $ tesseract --list-langs
 ```
 
-### Step 6: Downloading language files
-Initially you'll find no language data is available. You need to download data files of the laguages you need from [tessdata files](https://github.com/tesseract-ocr/tesseract/wiki/Data-Files). You'll find three types of file availabe. [tessdata_fast](https://github.com/tesseract-ocr/tessdata_fast), [tessdata_best](https://github.com/tesseract-ocr/tessdata_best), [tessdata](https://github.com/tesseract-ocr/tessdata). You can download any of them according to your need. ( You'll find more about them in [tesseract github wiki](https://github.com/tesseract-ocr/tesseract/wiki) )
-* Move your downloaded language files to the tessdata directory. Default is `/usr/local/share/tessdata`. Now you can see the available languages using `$tesseract --list-langs` command from terminal.
+### Step 6: Download language files
+Initially you'll find no language data is available. You need to download [data files](https://github.com/tesseract-ocr/tesseract/wiki/Data-Files) of the laguages you need. You'll find three types of files availabe. [tessdata_fast](https://github.com/tesseract-ocr/tessdata_fast), [tessdata_best](https://github.com/tesseract-ocr/tessdata_best), and [tessdata](https://github.com/tesseract-ocr/tessdata). You can download any of them according to your need. ( You'll find more about them in [tesseract github wiki](https://github.com/tesseract-ocr/tesseract/wiki) )
+* Move your downloaded language files to the tessdata directory. Default is `/usr/local/share/tessdata`. Now you can see the available languages using `$ tesseract --list-langs` command from terminal.
 
 Using tesseract
 ---
-To extract bangla text data from an image file named `input.png` you can use the following command:
+For example to extract bangla text data from an image file named `input.png` you can use the following command:
 ```sh
 $ tesseract input.png output -l ben
 ```
-You can find more options and uses in `$tesseract --help` or `$man tesseract` 
+You can find more options and uses with `$tesseract --help` or `$man tesseract` 
 
 
 **All the Best !**
