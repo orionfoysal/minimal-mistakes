@@ -9,10 +9,10 @@ sudo apt install openssh-server openssh-client
 ~~~
 
 * **Find the Network route of PC-A**
-![ ](/home/orion/git_projects/blog/orionfoysal.github.io/assets/images/route.png  "route")
+![ ](/assets/images/route.png  "route")
 
 * **Find IP addresses PC-A under that route**
-![ ](/home/orion/git_projects/blog/orionfoysal.github.io/assets/images/ifconfig.png  "ifconfig")
+![ ](/assets/images/ifconfig.png  "ifconfig")
 
 * **Check if you can login PC-A from PC-B via SSH**
 ~~~bash
