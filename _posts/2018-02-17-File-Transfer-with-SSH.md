@@ -9,10 +9,11 @@ sudo apt install openssh-server openssh-client
 ~~~
 
 * **Find the Network route of PC-A**
-![ ](/assets/images/route.png  "route")
+![ ]({{ "/assets/images/route.png" | absolute_url }})
 
 * **Find IP addresses PC-A under that route**
-![ ](/assets/images/ifconfig.png  "ifconfig")
+![ ]({{ "/assets/images/ifconfig.png" | absolute_url }})
+
 
 * **Check if you can login PC-A from PC-B via SSH**
 ~~~bash
