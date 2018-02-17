@@ -23,6 +23,8 @@ Use PC-A username, IP-Address and Password to login. Exit the connection with *l
 
 * **Now to copy a file from the PC-A  use this command from PC-B terminal**
 ~~~bash
+//To copy a fie 
 scp username@ip_address:/home/orion/test.txt .
+//To copy a folder
 scp -r username@ip_address:/home/orion/testfolder .
 ~~~
