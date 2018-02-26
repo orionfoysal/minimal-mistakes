@@ -1,8 +1,6 @@
 ---
 title: "Git for Noobs"
 layout: single
-categories:
-  - Image Processing
 header:
   teaser: /assets/images/git.gif
 author: Shariful Islam Foysal
