@@ -16,7 +16,7 @@ description              : "Empty vessel Sounds Much"
 url                      : #orinfoysal.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : #orionfoysal/orionfoysal.github.io # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : /assets/images/Dumb_Runner_Forrest_Gump.png # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : /assets/images/MSR-AI_Brain-Hero.jpg # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -84,11 +84,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Forrest Gump"
+  name             : "Shariful Islam Foysal"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "NoWhere"
-  email            :  "orionfoysal@gmail.com"
+  bio              : "Dreamer,Reader,Data Science Enthusiast"
+  location         : "Dhaka, Bangladesh"
+  email            : "orionfoysal@gmail.com"
   uri              :
   bitbucket        :
   codepen          :
@@ -102,7 +102,7 @@ author:
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         : # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
+  linkedin         : "sharifulfoysal" # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
