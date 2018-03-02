@@ -9,7 +9,7 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 
 # Site Settings
 locale                   : "en"
-title                    : "Dead Men Tell No Tales"
+title                    : "Hocus Pocus"
 title_separator          : "|"
 name                     : "Shariful Islam Foysal"
 description              : "Empty vessel Sounds Much"
@@ -86,7 +86,7 @@ analytics:
 author:
   name             : "Shariful Islam Foysal"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Dreamer,Reader,Data Science Enthusiast"
+  bio              : "Dead Men Tell No Tales"
   location         : "Dhaka, Bangladesh"
   email            : "orionfoysal@gmail.com"
   uri              :
