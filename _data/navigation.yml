@@ -10,13 +10,13 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
-  - title: Tutorials
-    url: /categories/
-  - title: Projects
-    url: /collection-archive/
+  #- title: Tutorials
+ #   url: /categories/
+  #- title: Projects
+   # url: /collection-archive/
   - title: Search
     url: /search/
   - title: "About"
     url: /about/
-  - title: "Grid"
-    url: /portfolio/
+  #- title: "Grid"
+   # url: /portfolio/
