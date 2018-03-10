@@ -102,7 +102,7 @@ You can find more options and uses with `$tesseract --help` or `$man tesseract`
   ```
 
 ### Recognize Multiple languages in an image
-```
+```sh
 tesseract input.jpg out -l eng+ben #primary-eng 
 #or
 tesseract input.jpg out -l ben+eng #primary-ben 
