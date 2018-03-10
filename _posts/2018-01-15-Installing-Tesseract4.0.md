@@ -98,14 +98,14 @@ You can find more options and uses with `$tesseract --help` or `$man tesseract`
 * Add control parameters [To find all the available parameters use `tesseract --print-parameters`]. For example to get the intermediate preprocessed image tesseract generates add `tessedit_write_images` to `true` or [use user specified dictionaty](https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc#config-files-and-augmenting-with-user-data) instead of default dictionay. 
 * Use the configfile name as parameter while running `tesseract`.
   ```bash
-  tesseract input.jpg output.txt myconfig
+  $ tesseract input.jpg output.txt myconfig
   ```
 
 ### Recognize Multiple languages in an image
 ```sh
-tesseract input.jpg out -l eng+ben #primary-eng 
-#or
-tesseract input.jpg out -l ben+eng #primary-ben 
+$ tesseract input.jpg out -l eng+ben #primary-eng 
+  #or
+$ tesseract input.jpg out -l ben+eng #primary-ben 
 ```
 
 **All the Best !**
